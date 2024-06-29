@@ -7,4 +7,8 @@ var descrption = document.querySelector('p');
 if (descrption) {
     descrption.textContent = 'This is script language';
 }
-var a = 'suhaib';
+function greeting(e) {
+    e.preventDefault();
+    var data = document.getElementById('username');
+    console.log(data === null || data === void 0 ? void 0 : data.innerHTML);
+}

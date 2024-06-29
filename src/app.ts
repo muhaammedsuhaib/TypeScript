@@ -6,4 +6,9 @@ const descrption = document.querySelector('p');
 if(descrption){
   descrption.textContent = 'This is script language';
 }
-const a: string = 'suhaib';
+function greeting(e:Event):void{
+  e.preventDefault();
+  
+  var data=document.getElementById('username');
+  console.log(data);
+}
